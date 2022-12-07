@@ -59,8 +59,8 @@ public class SpartanAuthApi_PostTest extends SpartanAuthTestBase {
          /*
             we can give name to each execution using name = ""
             and if you want to get index of iteration we can use {index}
-            and also if you to include parameter in your test name
-            {0} , {1},{2} --> based on the order you provide as argument.
+            and also if you are to include parameter in your test name
+            {0},{1},{2} --> based on the order you provide as argument.
          */
     }
 }

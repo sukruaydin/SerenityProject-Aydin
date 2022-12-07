@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: finspire.spartan_auth.editor.SpartanAuthApi_PostTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.09 s - in finspire.spartan_auth.editor.SpartanAuthApi_PostTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 6.006 s - in finspire.spartan_auth.editor.SpartanAuthApi_PostTest
