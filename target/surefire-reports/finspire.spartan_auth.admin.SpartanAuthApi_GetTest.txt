@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: finspire.spartan_auth.admin.SpartanAuthApi_GetTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.052 s - in finspire.spartan_auth.admin.SpartanAuthApi_GetTest
