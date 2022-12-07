@@ -144,7 +144,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 07-12-2022 14:15</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 07-12-2022 20:02</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -173,9 +173,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">
+                                <span class="error-color">
                                     Editor
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -243,18 +243,18 @@
                                 <div class="card-body">
                                     <h4>Response</h4>
                                         <p>URL: http://54.82.123.95:7000/api/spartans</p>
-                                        <p>Status code: 201</p>
+                                        <p>Status code: 400</p>
                                         <p>Content Type: application/json</p>
                                         <h4>Request Headers</h4>
                                         <pre>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
                                         <h4>Content Body</h4>
-                                        <pre>{<br>    &quot;name&quot;: &quot;Gabriel&quot;,<br>    &quot;gender&quot;: &quot;Male&quot;,<br>    &quot;phone&quot;: 7905446225<br>}</pre>
+                                        <pre>{<br>    &quot;name&quot;: &quot;Gustavo&quot;,<br>    &quot;gender&quot;: &quot;Male&quot;,<br>    &quot;phone&quot;: 541812229<br>}</pre>
                                         <h4>Request Cookies</h4>
                                         <pre></pre>
                                         <h4>Response Headers</h4>
-                                        <pre>Location: http://54.82.123.95:7000/api/spartans/166<br>X-Content-Type-Options: nosniff<br>X-XSS-Protection: 1; mode=block<br>Cache-Control: no-cache, no-store, max-age=0, must-revalidate<br>Pragma: no-cache<br>Expires: 0<br>Content-Type: application/json<br>Transfer-Encoding: chunked<br>Date: Wed, 07 Dec 2022 11:14:57 GMT</pre>
+                                        <pre>X-Content-Type-Options: nosniff<br>X-XSS-Protection: 1; mode=block<br>Cache-Control: no-cache, no-store, max-age=0, must-revalidate<br>Pragma: no-cache<br>Expires: 0<br>Content-Type: application/json;charset=UTF-8<br>Transfer-Encoding: chunked<br>Date: Wed, 07 Dec 2022 17:02:47 GMT<br>Connection: close</pre>
                                     <h4>Response Body</h4>
-                                        <pre>{<br>    &quot;success&quot;: &quot;A Spartan is Born!&quot;,<br>    &quot;data&quot;: {<br>        &quot;id&quot;: 166,<br>        &quot;name&quot;: &quot;Gabriel&quot;,<br>        &quot;gender&quot;: &quot;Male&quot;,<br>        &quot;phone&quot;: 7905446225<br>    }<br>}</pre>
+                                        <pre>{<br>    &quot;timestamp&quot;: &quot;2022-12-07T17:02:47.029+0000&quot;,<br>    &quot;status&quot;: 400,<br>    &quot;error&quot;: &quot;Bad Request&quot;,<br>    &quot;errors&quot;: [<br>        {<br>            &quot;codes&quot;: [<br>                &quot;Min.spartan.phone&quot;,<br>                &quot;Min.phone&quot;,<br>                &quot;Min.long&quot;,<br>                &quot;Min&quot;<br>            ],<br>            &quot;arguments&quot;: [<br>                {<br>                    &quot;codes&quot;: [<br>                        &quot;spartan.phone&quot;,<br>                        &quot;phone&quot;<br>                    ],<br>                    &quot;arguments&quot;: null,<br>                    &quot;defaultMessage&quot;: &quot;phone&quot;,<br>                    &quot;code&quot;: &quot;phone&quot;<br>                },<br>                1000000000<br>            ],<br>            &quot;defaultMessage&quot;: &quot;Phone number should be at least 10 digit and UNIQUE!!&quot;,<br>            &quot;objectName&quot;: &quot;spartan&quot;,<br>            &quot;field&quot;: &quot;phone&quot;,<br>            &quot;rejectedValue&quot;: 541812229,<br>            &quot;bindingFailure&quot;: false,<br>            &quot;code&quot;: &quot;Min&quot;<br>        }<br>    ],<br>    &quot;message&quot;: &quot;Validation failed for object='spartan'. Error count: 1&quot;,<br>    &quot;path&quot;: &quot;/api/spartans&quot;<br>}</pre>
                                 </div>
                             </div>
                         </div>
@@ -267,12 +267,12 @@
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
                         <td width="100"><span class="top-level-step">0s</span></td>
                     </tr>
-                    <tr class="test-SUCCESS">
+                    <tr class="test-FAILURE">
 
                         <td width="50" class="step-icon">
                             <a name="1"></a>
                                 <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
                                 </span>
                         </td>
 
@@ -286,9 +286,47 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.03s</span></td>
+                        <td width="130"><span class="top-level-step">FAILURE</span></td>
+                        <td width="100"><span class="top-level-step">0.06s</span></td>
                     </tr>
+                        <tr class="test-FAILURE">
+                            <td width="40">&nbsp</td>
+                            <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">java.lang.AssertionError: 1 expectation failed.<br>Expected status code &lt;201&gt; but was &lt;400&gt;.<br></span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-2""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-2">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br />io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)<br />io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)<br />io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)<br />io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy:-1)<br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)<br />io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)<br />io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:-1)<br />finspire.spartan_auth.editor.SpartanAuthApi_PostTest.lambda$test1$0(SpartanAuthApi_PostTest.java:48)<br />net.serenitybdd.rest.Ensure.performCheck(Ensure.java:35)<br />net.serenitybdd.rest.Ensure.that(Ensure.java:23)<br />finspire.spartan_auth.editor.SpartanAuthApi_PostTest.test1(SpartanAuthApi_PostTest.java:48)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                            </td>
+                        </tr>
                     <tr class="test-SUCCESS">
 
                         <td width="50" class="step-icon">
@@ -311,12 +349,12 @@
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
                         <td width="100"><span class="top-level-step">0s</span></td>
                     </tr>
-                    <tr class="test-SUCCESS">
+                    <tr class="test-FAILURE">
 
                         <td width="50" class="step-icon">
                             <a name="3"></a>
                                 <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
                                 </span>
                         </td>
 
@@ -330,15 +368,53 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.6s</span></td>
+                        <td width="130"><span class="top-level-step">FAILURE</span></td>
+                        <td width="100"><span class="top-level-step">0.59s</span></td>
                     </tr>
-                    <tr class="test-SUCCESS">
+                        <tr class="test-FAILURE">
+                            <td width="40">&nbsp</td>
+                            <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">java.lang.AssertionError: 1 expectation failed.<br>JSON path success doesn&#39;t match.<br>Expected: is &quot;A Spartan is Born!&quot;<br>  Actual: null<br></span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-4""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br />io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)<br />io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)<br />io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)<br />io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy:-1)<br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)<br />io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)<br />io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:-1)<br />finspire.spartan_auth.editor.SpartanAuthApi_PostTest.lambda$test1$2(SpartanAuthApi_PostTest.java:50)<br />net.serenitybdd.rest.Ensure.performCheck(Ensure.java:35)<br />net.serenitybdd.rest.Ensure.that(Ensure.java:23)<br />finspire.spartan_auth.editor.SpartanAuthApi_PostTest.test1(SpartanAuthApi_PostTest.java:50)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                            </td>
+                        </tr>
+                    <tr class="test-FAILURE">
 
                         <td width="50" class="step-icon">
                             <a name="4"></a>
                                 <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
                                 </span>
                         </td>
 
@@ -352,15 +428,53 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.02s</span></td>
+                        <td width="130"><span class="top-level-step">FAILURE</span></td>
+                        <td width="100"><span class="top-level-step">0.03s</span></td>
                     </tr>
-                    <tr class="test-SUCCESS">
+                        <tr class="test-FAILURE">
+                            <td width="40">&nbsp</td>
+                            <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">java.lang.AssertionError: 1 expectation failed.<br>JSON path data.id doesn&#39;t match.<br>Expected: not null<br>  Actual: null<br></span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-5""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-5">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br />io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)<br />io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)<br />io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)<br />io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy:-1)<br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)<br />io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)<br />io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:-1)<br />finspire.spartan_auth.editor.SpartanAuthApi_PostTest.lambda$test1$3(SpartanAuthApi_PostTest.java:51)<br />net.serenitybdd.rest.Ensure.performCheck(Ensure.java:35)<br />net.serenitybdd.rest.Ensure.that(Ensure.java:23)<br />finspire.spartan_auth.editor.SpartanAuthApi_PostTest.test1(SpartanAuthApi_PostTest.java:51)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                            </td>
+                        </tr>
+                    <tr class="test-FAILURE">
 
                         <td width="50" class="step-icon">
                             <a name="5"></a>
                                 <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
                                 </span>
                         </td>
 
@@ -374,15 +488,53 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.01s</span></td>
+                        <td width="130"><span class="top-level-step">FAILURE</span></td>
+                        <td width="100"><span class="top-level-step">0.03s</span></td>
                     </tr>
-                    <tr class="test-SUCCESS">
+                        <tr class="test-FAILURE">
+                            <td width="40">&nbsp</td>
+                            <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">java.lang.AssertionError: 1 expectation failed.<br>JSON path data.name doesn&#39;t match.<br>Expected: is &quot;Gustavo&quot;<br>  Actual: null<br></span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-6""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br />io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)<br />io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)<br />io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)<br />io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy:-1)<br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)<br />io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)<br />io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:-1)<br />finspire.spartan_auth.editor.SpartanAuthApi_PostTest.lambda$test1$4(SpartanAuthApi_PostTest.java:52)<br />net.serenitybdd.rest.Ensure.performCheck(Ensure.java:35)<br />net.serenitybdd.rest.Ensure.that(Ensure.java:23)<br />finspire.spartan_auth.editor.SpartanAuthApi_PostTest.test1(SpartanAuthApi_PostTest.java:52)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                            </td>
+                        </tr>
+                    <tr class="test-FAILURE">
 
                         <td width="50" class="step-icon">
                             <a name="6"></a>
                                 <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
                                 </span>
                         </td>
 
@@ -396,15 +548,53 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.01s</span></td>
+                        <td width="130"><span class="top-level-step">FAILURE</span></td>
+                        <td width="100"><span class="top-level-step">0.02s</span></td>
                     </tr>
-                    <tr class="test-SUCCESS">
+                        <tr class="test-FAILURE">
+                            <td width="40">&nbsp</td>
+                            <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">java.lang.AssertionError: 1 expectation failed.<br>JSON path data.gender doesn&#39;t match.<br>Expected: is &quot;Male&quot;<br>  Actual: null<br></span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-7""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-7">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br />io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)<br />io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)<br />io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)<br />io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy:-1)<br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)<br />io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)<br />io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:-1)<br />finspire.spartan_auth.editor.SpartanAuthApi_PostTest.lambda$test1$5(SpartanAuthApi_PostTest.java:53)<br />net.serenitybdd.rest.Ensure.performCheck(Ensure.java:35)<br />net.serenitybdd.rest.Ensure.that(Ensure.java:23)<br />finspire.spartan_auth.editor.SpartanAuthApi_PostTest.test1(SpartanAuthApi_PostTest.java:53)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                            </td>
+                        </tr>
+                    <tr class="test-FAILURE">
 
                         <td width="50" class="step-icon">
                             <a name="7"></a>
                                 <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
                                 </span>
                         </td>
 
@@ -418,15 +608,53 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="130"><span class="top-level-step">FAILURE</span></td>
                         <td width="100"><span class="top-level-step">0.02s</span></td>
                     </tr>
-                    <tr class="test-SUCCESS">
+                        <tr class="test-FAILURE">
+                            <td width="40">&nbsp</td>
+                            <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">java.lang.AssertionError: 1 expectation failed.<br>JSON path data.phone doesn&#39;t match.<br>Expected: is &lt;541812229L&gt;<br>  Actual: null<br></span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-8""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-8">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br />io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)<br />io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)<br />io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)<br />io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy:-1)<br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)<br />io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)<br />io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:-1)<br />finspire.spartan_auth.editor.SpartanAuthApi_PostTest.lambda$test1$6(SpartanAuthApi_PostTest.java:54)<br />net.serenitybdd.rest.Ensure.performCheck(Ensure.java:35)<br />net.serenitybdd.rest.Ensure.that(Ensure.java:23)<br />finspire.spartan_auth.editor.SpartanAuthApi_PostTest.test1(SpartanAuthApi_PostTest.java:54)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                            </td>
+                        </tr>
+                    <tr class="test-ERROR">
 
                         <td width="50" class="step-icon">
                             <a name="8"></a>
                                 <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a>
                                 </span>
                         </td>
 
@@ -440,13 +668,51 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.05s</span></td>
+                        <td width="130"><span class="top-level-step">ERROR</span></td>
+                        <td width="100"><span class="top-level-step">0.04s</span></td>
                     </tr>
-                <tr class="test-SUCCESS">
+                        <tr class="test-ERROR">
+                            <td width="40">&nbsp</td>
+                            <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">java.lang.IllegalArgumentException: missing substring</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-9""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-9">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.IllegalArgumentException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>finspire.spartan_auth.editor.SpartanAuthApi_PostTest.lambda$test1$7(SpartanAuthApi_PostTest.java:56)<br />net.serenitybdd.rest.Ensure.performCheck(Ensure.java:35)<br />net.serenitybdd.rest.Ensure.that(Ensure.java:23)<br />finspire.spartan_auth.editor.SpartanAuthApi_PostTest.test1(SpartanAuthApi_PostTest.java:55)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                            </td>
+                        </tr>
+                <tr class="test-ERROR">
                         <td colspan="2"></td>
-                    <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>3.43s</em></span></td>
+                    <td width="130"><span class="top-level-step"><em>ERROR</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>5.07s</em></span></td>
                 </tr>
 
             </table>

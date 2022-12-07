@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: finspire.spartan_auth.editor.SpartanAuthApi_PostTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 6.006 s - in finspire.spartan_auth.editor.SpartanAuthApi_PostTest
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 14.398 s <<< FAILURE! - in finspire.spartan_auth.editor.SpartanAuthApi_PostTest
+finspire.spartan_auth.editor.SpartanAuthApi_PostTest.test1  Time elapsed: 5.181 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <400>.
+
+	at finspire.spartan_auth.editor.SpartanAuthApi_PostTest.lambda$test1$0(SpartanAuthApi_PostTest.java:48)
+	at finspire.spartan_auth.editor.SpartanAuthApi_PostTest.test1(SpartanAuthApi_PostTest.java:48)
+

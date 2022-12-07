@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Spartan auth api post test","Editor","ERROR","2022-12-07T20:02:51.1345713+03:00[Asia/Istanbul]","0.0","5.07"
+"Spartan auth api post test","New Spartan 2 - name","FAILURE","2022-12-07T20:02:57.1925909+03:00[Asia/Istanbul]","0.0","0.64"
+"Spartan auth api post test","New Spartan 7 - name","FAILURE","2022-12-07T20:03:00.2626431+03:00[Asia/Istanbul]","0.0","0.58"
+"Spartan auth api post test","New Spartan 8 - name","FAILURE","2022-12-07T20:03:00.8456788+03:00[Asia/Istanbul]","0.0","0.68"
