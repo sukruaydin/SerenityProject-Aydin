@@ -1,4 +1,7 @@
-finspire\spartan_auth\admin\SpartanAuthApi_GetTest.class
+finspire\bookit\BookItApi_EnvTest.class
 utilities\SpartanUtils.class
-utilities\SpartanAuthTestBase.class
 finspire\spartan_auth\editor\SpartanAuthApi_PostTest.class
+utilities\ConfigReader.class
+finspire\spartan_auth\admin\SpartanAuthApi_GetTest.class
+utilities\SpartanAuthTestBase.class
+finspire\spartan_auth\ConfigDemoTest.class

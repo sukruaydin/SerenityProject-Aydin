@@ -1,8 +1,10 @@
 package finspire.bookit;
 
+import net.serenitybdd.junit5.SerenityTest;
 import org.junit.jupiter.api.Test;
 import utilities.ConfigReader;
 
+@SerenityTest
 public class BookItApi_EnvTest {
 
     @Test

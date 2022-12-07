@@ -1,10 +1,12 @@
 package finspire.spartan_auth;
 
+import net.serenitybdd.junit5.SerenityTest;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import utilities.ConfigReader;
 
 @Disabled
+@SerenityTest
 public class ConfigDemoTest {
 
     @Test
