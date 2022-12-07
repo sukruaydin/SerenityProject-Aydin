@@ -6,6 +6,7 @@ import io.restassured.response.Response;
 import net.serenitybdd.junit5.SerenityTest;
 import net.serenitybdd.rest.Ensure;
 import org.hamcrest.Matchers;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -19,6 +20,7 @@ import java.util.Map;
 
 import static net.serenitybdd.rest.SerenityRest.*;
 
+@Disabled
 @SerenityTest
 public class SpartanAuthApi_PostTest extends SpartanAuthTestBase {
 

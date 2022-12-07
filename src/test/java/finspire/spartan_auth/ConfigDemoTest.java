@@ -1,8 +1,10 @@
 package finspire.spartan_auth;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import utilities.ConfigReader;
 
+@Disabled
 public class ConfigDemoTest {
 
     @Test
