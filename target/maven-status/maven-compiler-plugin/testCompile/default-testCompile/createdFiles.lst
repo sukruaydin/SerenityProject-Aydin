@@ -1,1 +1,4 @@
 finspire\spartan_auth\admin\SpartanAuthApi_GetTest.class
+utilities\SpartanUtils.class
+utilities\SpartanAuthTestBase.class
+finspire\spartan_auth\editor\SpartanAuthApi_PostTest.class

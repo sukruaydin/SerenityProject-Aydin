@@ -1,4 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Spartan auth api get test","regular get request","SUCCESS","2022-12-07T12:59:59.5631561+03:00[Asia/Istanbul]","0.0","2.96"
-"Spartan auth api get test","lastResponse method","SUCCESS","2022-12-07T13:00:02.5254726+03:00[Asia/Istanbul]","0.0","1.15"
-"Spartan auth api get test","Serenity Assertion","SUCCESS","2022-12-07T13:00:03.6722202+03:00[Asia/Istanbul]","0.0","0.56"
