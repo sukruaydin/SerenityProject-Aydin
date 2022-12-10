@@ -35,7 +35,6 @@ public class SpartanAuthApi_GetTest {
 
     }
 
-
     @DisplayName("lastResponse() method")
     @Test
     public void test2(){
